@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBRh3JunrbR6cF5cD-kdp4LoIs1qb8gbY&callback=initMap"
+type="text/javascript"></script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <title>livelocation</title>
+    <link rel="stylesheet" href="css/style.css"><title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+   {{!-- now all codes --}}
+   <div class="container-fluid main_all">
+     <div class="row">
+      <div class="col-md-12 col-12 mx-auto">
+          <div class="row">
+     <div class="col-md-3 col-12 first_btn" id="start_btn">
+      <button type="button" class="btn btn-success">Start</button>
+    </div>
+    <div class="col-md-6 col-12 second_btn" id="maphere">
+        {{!-- <img src="./images/canvas.png" alt="mai he hoo" /> --}}
+    </div>
+    <div class="col-md-3 col-12 third_btn" id="end_btn">
+     <button type="button" class="btn btn-danger">End</button>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+{{!-- result part --}}
+<div>
+    <h3  class="res">Here are the results.</h3>
+</div>
+<div class="container-fluid main_all">
+  <div class="row">
+      <div class="col-md-10  col-12 mx-auto">
+          <div class="row">
+             <div class="col-md-6 mx-auto " >
+                 <ul class="alldetail">
+                    <li>current location</li>
+                    <li>destination</li>
+                    <li>start time</li>
+                    <li>end time</li>
+                    <li>distance (km)</li>
+                    <li>distance (miles)</li>
+                    <li>time taken</li>
+                </ul>
+             </div>
+             <div class="col-md-6 alldata">
+               <input type="text" name="" id="currloc">
+               <input type="text" name="" id="dest">
+               <input type="text" name="" id="starttime">
+               <input type="text" name="" id="endtime">
+               <input type="text" name="" id="distancek">
+               <input type="text" name="" id="distancem">
+               <input type="text" name="" id="timetaken">
+             </div>
+          </div>
+           
+      </div>
+  </div>
+</div>
+{{>footer}}
+<script src="js/main1.js">
+ 
+ </script>
+</body>
+</html>
